@@ -7,7 +7,7 @@
         }
         </p>
         <app-input></app-input>
-        <app-input ></app-input>
+        <app-input></app-input>
         <app-button type="submit"> 
             @if (isSubscribed){
                 Login
@@ -15,14 +15,13 @@
                 Create your account
             }
         </app-button>
-        <app-button>
+        <app-button (click)="logOrSub()">
             @if (isSubscribed){
-                Create account
+                Create an account and join us!
             }@else{
-                Enter with your account
+                Already have an account? Sign in!
             }
         </app-button>
-        
     </form>
 </div>
 

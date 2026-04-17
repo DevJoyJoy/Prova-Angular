@@ -41,6 +41,9 @@ export class LoginPage {
     return this.loginForm.get("password");
   }
 
+  logOrSub = () => {
+    this.isSubscribed = !this.isSubscribed;
+  }
 
   formAction = () => {
 
