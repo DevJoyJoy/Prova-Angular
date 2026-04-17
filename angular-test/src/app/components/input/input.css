@@ -1,0 +1,10 @@
+.input {
+    background-color: rgb(59, 59, 75);
+    width: 25vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    color: white;
+    margin: 2vh;
+}

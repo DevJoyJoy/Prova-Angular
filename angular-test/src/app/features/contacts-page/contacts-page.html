@@ -1,0 +1,18 @@
+<div class="backgroundLogin">
+    <app-header></app-header>
+    <button class="buttonContacts">Adicionar contato</button>
+    <div class="mainBox">
+        <div class="contact" (click)="close()">
+            <p>Contato</p>
+            <p>41 9 9999-9999</p>
+        </div>
+        <div class="contact" (click)="close()">
+            <p>Contato</p>
+            <p>41 9 9999-8888</p>
+        </div>
+        @if (openModal){
+            <app-modal (click)="close()">
+            </app-modal>
+        }
+    </div>
+</div>

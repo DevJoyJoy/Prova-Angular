@@ -1,0 +1,31 @@
+<div class="backgroundLogin">
+    <form action="" class="mainBox" [formGroup]="loginForm" (ngSubmit)="formAction()">
+        <p>@if (isSubscribed){
+            Login
+        }@else {
+            Create your account
+        }
+        </p>
+        <app-input></app-input>
+        <app-input ></app-input>
+        <app-button type="submit"> 
+            @if (isSubscribed){
+                Login
+            }@else{
+                Create your account
+            }
+        </app-button>
+        <app-button>
+            @if (isSubscribed){
+                Create account
+            }@else{
+                Enter with your account
+            }
+        </app-button>
+        
+    </form>
+</div>
+
+<!-- Esses daqui estao bugando a página e não estavam funcionando 
+<app-input formControlName="username"></app-input>
+<app-input  formControlName="password"></app-input> -->
